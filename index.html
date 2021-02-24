@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Grupal 03</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Desarrollar una página html que permita el registro de los datos de los 
+        empleados que pertenecen a la empresa ABC.  Los campos para registrar son: 
+         , sexo, provincia y ciudad de nacimiento
+
+    El cliente nos ha indicado que:
+
+    Desea que cada que seleccione una provincia en otro campo aparezcan los nombres de las ciudades para poder seleccionar una de ellas.  (Para el ejercicio se considerar incluir 3 provincias  para la seleccione y luego que seleccione una provincia se incluirán 3 ciudades en otro control de selección)
+    Cuando un control reciba el enfoque su color de fondo cambie, como medida para saber sobre campo se encuentra trabajando.  Además, que cuando el control pierda el enfoque vuelva a su color original.
+    Que le gustaría poder escoger el sexo del empleado desde un listado para no escribirlo.
+    
+
+    El formulario debe incluir el botón “Send”, que debe validar que todos los campos tengan los datos correctos.-->
+    <h1>Taller grupal 3 - Grupo 03</h1>
+    <p class="authors">Autores: Arroyo, Cox, Falcones, Mendoza, Vargas P.</p>
+    <section class="frame">
+        <h2 class="title">ABC - REGISTRO DE EMPLEADOS</h1>
+        <form action="" method="" id="formulario">
+            <div class="campo-form">
+                <input class="campo campo-txt" id="cedula" type="text" placeholder="Cédula">
+            </div>
+            <div class="campo-form">
+                <input class="campo campo-txt" id="nombre" type="text" placeholder="Nombre">
+            </div>
+            <div  class="campo-form">
+                <input class="campo campo-text" id="direccion" type="text" placeholder="Dirección">
+            </div>
+            <div class="campo-form">
+                <select class="campo campo-text" name="select" id="sexo">
+                    <option disabled selected value="none">Seleccione su sexo</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                </select>
+            </div>
+            <div class="campo-form">
+                <select class="campo" name="select" id="provincia">
+                    <option disabled selected value="none">Seleccione su provincia</option>
+                    <option value="Guayas">Guayas</option>
+                    <option value="Pichincha">Pichincha</option>
+                    <option value="Manabi">Manabí</option>
+                </select>
+            </div>
+            <div class="campo-form">
+                <select class="campo" name="select" id="ciudad">
+                    <option disabled selected value="none">Seleccione una ciudad</option>
+                    <option id="ciudad1" value="ciudad1"></option>
+                    <option id="ciudad2" value="ciudad2"></option>
+                    <option id="ciudad3" value="ciudad3"></option>
+                </select>
+            </div class="campo-form">
+            <div class="boton">
+                <button class="campo" type="button" id="btnEnviar">Send</button>
+            </div>
+        </form>
+        
+    </section>
+
+    <section class="frame">
+        <div id="datosFinales"></div>
+    </section>
+
+    <script src="js/app.js"></script>
+    <script src="js/app-ciudad.js"></script>
+</body>
+
+</html>
